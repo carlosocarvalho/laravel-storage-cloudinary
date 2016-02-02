@@ -1,5 +1,4 @@
 <?php
-
 namespace CarlosOCarvalho\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -17,7 +16,7 @@ class CloudinaryServiceProvider extends ServiceProvider {
 	 */
 	public function boot() {
 		Storage::extend('cloudinary', function ($app, $config) {
-			return new Filesystem(new CloudinaryAdapter($config) );
+			return new Filesystem( new CloudinaryAdapter($config) );
 		});
 	}
 
