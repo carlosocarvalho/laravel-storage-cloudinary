@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace CarlosOCarvalho\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
