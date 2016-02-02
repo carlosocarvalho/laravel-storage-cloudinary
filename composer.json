@@ -1,0 +1,16 @@
+{
+    "name": "carlosocarvalho/storage-cloudinary-laravel",
+    "license": "MIT",
+    "description":"Provider for laravel for Cloudinary",
+    "tags":["laravel 5","cloudinary provider","storage"],
+    "authors": [
+        {
+            "name": "Carlos O Carvalho",
+            "email": "quenduk@yahoo.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "carlosocarvalho/flysystem-cloudinary": "^1.0"
+    }
+}
