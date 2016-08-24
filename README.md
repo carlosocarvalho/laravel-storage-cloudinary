@@ -22,3 +22,8 @@ Install via composer
            ],
    
 ```
+
+  Add the service provider to the providers array in config/app.php
+```php
+    CarlosOCarvalho\Providers\CloudinaryServiceProvider::class
+```
