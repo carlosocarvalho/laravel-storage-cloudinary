@@ -1,4 +1,4 @@
-#Storage Laravel Provider
+## Storage Laravel Provider
 
 [![Latest Stable Version](https://poser.pugx.org/carlosocarvalho/storage-cloudinary-laravel/v/stable)](https://packagist.org/packages/carlosocarvalho/storage-cloudinary-laravel) [![Total Downloads](https://poser.pugx.org/carlosocarvalho/storage-cloudinary-laravel/downloads)](https://packagist.org/packages/carlosocarvalho/storage-cloudinary-laravel) [![Latest Unstable Version](https://poser.pugx.org/carlosocarvalho/storage-cloudinary-laravel/v/unstable)](https://packagist.org/packages/carlosocarvalho/storage-cloudinary-laravel) [![License](https://poser.pugx.org/carlosocarvalho/storage-cloudinary-laravel/license)](https://packagist.org/packages/carlosocarvalho/storage-cloudinary-laravel)
 
