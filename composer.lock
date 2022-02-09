@@ -1,34 +1,36 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "8d425423f3c3f71ba31259ad4a0b07d4",
-    "content-hash": "77cf34292d91911d78b82deea1f7d92d",
+    "content-hash": "1b89267575d9c56ec80ace9f084df0cf",
     "packages": [
         {
             "name": "carlosocarvalho/flysystem-cloudinary",
-            "version": "1.0.0",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/carlosocarvalho/flysystem-cloudinary.git",
-                "reference": "1179451bb5db6fb36fb6796b63b7fbe2e25456c6"
+                "reference": "b39a6131acae39bc44d54f955905ac46aa39911c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/carlosocarvalho/flysystem-cloudinary/zipball/1179451bb5db6fb36fb6796b63b7fbe2e25456c6",
-                "reference": "1179451bb5db6fb36fb6796b63b7fbe2e25456c6",
+                "url": "https://api.github.com/repos/carlosocarvalho/flysystem-cloudinary/zipball/b39a6131acae39bc44d54f955905ac46aa39911c",
+                "reference": "b39a6131acae39bc44d54f955905ac46aa39911c",
                 "shasum": ""
             },
             "require": {
-                "cloudinary/cloudinary_php": "^1.3",
-                "league/flysystem": "^1.0",
-                "php": ">=5.4.0"
+                "cloudinary/cloudinary_php": "^1.19",
+                "league/flysystem": "^2.0",
+                "php": ">=7.2"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "~4.0"
+                "phpunit/php-code-coverage": "9.2.*",
+                "phpunit/phpunit": "9.5.*",
+                "symfony/var-dumper": "^3.4.39",
+                "vlucas/phpdotenv": "^4.1"
             },
             "type": "library",
             "autoload": {
@@ -44,41 +46,53 @@
             "authors": [
                 {
                     "name": "carlosocarvalho",
-                    "email": "carlosocarvalho.com.br@gmail.com"
+                    "email": "carlosocarvalho.com.br@gmail.com",
+                    "homepage": "https://carlosocarvalho.com.br",
+                    "role": "Owner"
                 }
             ],
             "description": "Flysystem adapter for Cloudinary",
-            "time": "2016-02-02 20:11:18"
+            "homepage": "http://carlosocarvalho.github.io/flysystem-cloudinary",
+            "keywords": [
+                "Flysystem",
+                "cloudinary"
+            ],
+            "support": {
+                "issues": "https://github.com/carlosocarvalho/flysystem-cloudinary/issues",
+                "source": "https://github.com/carlosocarvalho/flysystem-cloudinary/tree/v2.0.2"
+            },
+            "time": "2021-06-30T14:50:53+00:00"
         },
         {
             "name": "cloudinary/cloudinary_php",
-            "version": "1.3.0",
+            "version": "1.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cloudinary/cloudinary_php.git",
-                "reference": "3d82f544d6fd8e4135ab9712093840d20cec5bac"
+                "reference": "94516fe6d0a43645e964b38d78d5f4555dbd192d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/3d82f544d6fd8e4135ab9712093840d20cec5bac",
-                "reference": "3d82f544d6fd8e4135ab9712093840d20cec5bac",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/94516fe6d0a43645e964b38d78d5f4555dbd192d",
+                "reference": "94516fe6d0a43645e964b38d78d5f4555dbd192d",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
-                "php": ">=5.3.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.7.*"
+                "ext-zip": "*",
+                "phpunit/phpunit": "4.8.*"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src"
-                ],
                 "files": [
                     "src/Helpers.php"
+                ],
+                "classmap": [
+                    "src"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -100,58 +114,53 @@
                 "image management",
                 "sdk"
             ],
-            "time": "2016-01-28 13:48:02"
+            "support": {
+                "email": "info@cloudinary.com",
+                "issues": "https://github.com/cloudinary/cloudinary_php/issues",
+                "source": "https://github.com/cloudinary/cloudinary_php/tree/1.20.1"
+            },
+            "time": "2022-02-01T08:35:49+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.16",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031"
+                "reference": "ca8e4c10535be5c59c03f491310b60b9d6a60e24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/183e1a610664baf6dcd6fceda415baf43cbdc031",
-                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/ca8e4c10535be5c59c03f491310b60b9d6a60e24",
+                "reference": "ca8e4c10535be5c59c03f491310b60b9d6a60e24",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "ext-json": "*",
+                "league/mime-type-detection": "^1.0.0",
+                "php": "^7.2 || ^8.0"
             },
             "conflict": {
-                "league/flysystem-sftp": "<1.0.6"
+                "guzzlehttp/ringphp": "<1.1.1"
             },
             "require-dev": {
+                "async-aws/s3": "^1.5",
+                "async-aws/simple-s3": "^1.0",
+                "aws/aws-sdk-php": "^3.132.4",
+                "composer/semver": "^3.0",
                 "ext-fileinfo": "*",
-                "mockery/mockery": "~0.9",
-                "phpspec/phpspec": "^2.2",
-                "phpspec/prophecy-phpunit": "~1.0",
-                "phpunit/phpunit": "~4.8"
-            },
-            "suggest": {
-                "ext-fileinfo": "Required for MimeType",
-                "league/flysystem-aws-s3-v2": "Allows you to use S3 storage with AWS SDK v2",
-                "league/flysystem-aws-s3-v3": "Allows you to use S3 storage with AWS SDK v3",
-                "league/flysystem-azure": "Allows you to use Windows Azure Blob storage",
-                "league/flysystem-cached-adapter": "Flysystem adapter decorator for metadata caching",
-                "league/flysystem-copy": "Allows you to use Copy.com storage",
-                "league/flysystem-dropbox": "Allows you to use Dropbox storage",
-                "league/flysystem-eventable-filesystem": "Allows you to use EventableFilesystem",
-                "league/flysystem-rackspace": "Allows you to use Rackspace Cloud Files",
-                "league/flysystem-sftp": "Allows you to use SFTP server storage via phpseclib",
-                "league/flysystem-webdav": "Allows you to use WebDAV storage",
-                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter"
+                "ext-ftp": "*",
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "google/cloud-storage": "^1.23",
+                "phpseclib/phpseclib": "^2.0",
+                "phpstan/phpstan": "^0.12.26",
+                "phpunit/phpunit": "^8.5 || ^9.4",
+                "sabre/dav": "^4.1"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "League\\Flysystem\\": "src/"
+                    "League\\Flysystem\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -161,30 +170,98 @@
             "authors": [
                 {
                     "name": "Frank de Jonge",
-                    "email": "info@frenky.net"
+                    "email": "info@frankdejonge.nl"
                 }
             ],
-            "description": "Filesystem abstraction: Many filesystems, one API.",
+            "description": "File storage abstraction for PHP",
             "keywords": [
-                "Cloud Files",
                 "WebDAV",
-                "abstraction",
                 "aws",
                 "cloud",
-                "copy.com",
-                "dropbox",
-                "file systems",
+                "file",
                 "files",
                 "filesystem",
                 "filesystems",
                 "ftp",
-                "rackspace",
-                "remote",
                 "s3",
                 "sftp",
                 "storage"
             ],
-            "time": "2015-12-19 20:16:43"
+            "support": {
+                "issues": "https://github.com/thephpleague/flysystem/issues",
+                "source": "https://github.com/thephpleague/flysystem/tree/2.4.2"
+            },
+            "funding": [
+                {
+                    "url": "https://offset.earth/frankdejonge",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-31T19:40:25+00:00"
+        },
+        {
+            "name": "league/mime-type-detection",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/mime-type-detection.git",
+                "reference": "aa70e813a6ad3d1558fc927863d47309b4c23e69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/aa70e813a6ad3d1558fc927863d47309b4c23e69",
+                "reference": "aa70e813a6ad3d1558fc927863d47309b4c23e69",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "phpstan/phpstan": "^0.12.68",
+                "phpunit/phpunit": "^8.5.8 || ^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\MimeTypeDetection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Mime-type detection for Flysystem",
+            "support": {
+                "issues": "https://github.com/thephpleague/mime-type-detection/issues",
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-11-21T11:48:40+00:00"
         }
     ],
     "packages-dev": [],
@@ -194,5 +271,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
